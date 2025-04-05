@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/4661318.png">
+    <title>Currículo - Letícia Mendes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            flex: 1;
+            /* Ocupa todo o espaço disponível */
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #ebc2eb;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        h1 {
+            color: rgb(184, 111, 153);
+            font-size: 35px;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #a56e9c;
+            font-size: large;
+
+        }
+
+        h3 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: oblique;
+            color: rgb(165, 98, 150);
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <h1><b>LETICIA MENDES PORTELA</b></h1>
+        <p>Analista e Desenvolvedora de Sistemas</p>
+    </center>
+    <center><img src="imgs/WhatsApp Image 2025-04-05 at 17.45.56.jpeg" alt="foto" width="300px" height="auto"
+            style="border-radius: 100%;">
+    </center>
+
+    <hr>
+    <section>
+        <center>
+            <br>
+            <h2><b>Sobre</b></h2>
+            <p>Olinda, PE</p>
+            <p>Brasileira, Solteira, 19 anos.</p>
+            <p>ADS - 2 Período</p>
+            </br>
+        </center>
+        <center>
+        </center>
+    </section>
+    <section>
+
+        <center>
+            <h2>Objetivo</h2>
+            <p>Estágio de analista e Desenvolvedora de Sistemas</p>
+            <br>
+            <h2>Formação Acadêmica</h2>
+            <p>Análise e Desenvolvimento de Sistemas - Senac, Pe</p>
+            <br>
+            <h2>Experiência Profissional</h2>
+            <p>Jovem Aprendiz - Ocupações Administrativas (Início: 11/03/25 Final: 22/05/26)</p>
+            <br>
+            <h2>Habilidades</h2>
+            <p>Organização</p>
+            <p>Responsabilidade</p>
+            <p>Excel</p>
+            <p>Comunicação</p>
+            <br>
+            <h2>Idiomas</h2>
+            <p>Inglês (Intermediário)</p>
+            <br>
+            <h2>Cursos Complementares</h2>    
+            <p>Lógica de Programação - Alura (concluído em Out/24)</p>
+            <p>ReactJS - Rocketseat (Em andamento) </p>
+        </center>
+
+    </section>
+    <br>
+    <footer>
+        <h3><b>REDES SOCIAIS</b></h3>
+
+
+        <a href="https://www.linkedin.com/in/let%C3%ADcia-mendes-portela-9934ba2a9/">
+            <img src="imgs/linkedin.png" alt="LinkedIn" width="50" height="50">
+        </a>
+        <p>
+            <a href="mailto:leticiamendesportelateixeirami@gmail.com">
+                <img src="imgs/Email-Logo-PNG-HD-Quality.png" alt="Email" width="60" height="60">
+            </a>
+        </p>
+        <p>
+            <a href="http://github.com/leticiamendesz">
+                <img src="imgs/25231.png" alt="github" width="40 height=" 23">
+            </a>
+        </p>
+        <table>
+            <tr></tr>
+            <td></td>
+        </table>
+    </footer>
+
+</body>
