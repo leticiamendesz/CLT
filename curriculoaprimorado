@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imgs/4661318.png">
+    <title>Currículo - Letícia Mendes</title>
+
+    <!-- Link para o Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(235, 235, 235);
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #cca7c7;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        h1,
+        h2 {
+            font-style: italic;
+            color: rgb(209, 120, 202);
+        }
+
+        .form-section {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="text-center mt-5">
+            <h1><b>Analista e Desenvolvedora de Sistemas</b></h1>
+            <h2><b>LETÍCIA MENDES PORTELA</b></h2>
+            <img src="leticia_perfil.jpg" alt="foto" class="profile-img">
+        </header>
+
+        <main>
+            <h3 class="text-center mt-4">Currículo</h3>
+
+            <iframe src="curriculo2.html" width="100%" height="600px"></iframe>
+
+            <!-- Formulário -->
+            <div class="form-section">
+                <h3>Formulário de Contato</h3>
+                <form id="contact-form" action="#" method="POST" class="row g-3">
+                    <fieldset class="border p-4">
+                        <legend class="float-none w-auto">Informações Pessoais</legend>
+
+                        <!-- Nome e Sobrenome -->
+                        <div class="col-md-6">
+                            <label for="first-name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last-name" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="last-name" name="last-name" required>
+                        </div>
+
+                        <!-- Telefone -->
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required
+                                placeholder="(00) 00000-0000" pattern="^\(\d{2}\) \d{5}-\d{4}$">
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required
+                                placeholder="example@mail.com">
+                        </div>
+
+                        <!-- Mensagem -->
+                        <div class="col-md-12">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                        </div>
+
+                        <!-- Língua -->
+                        <div class="col-md-6">
+                            <label for="language" class="form-label">Língua Aplicada</label>
+                            <select class="form-select" id="language" name="language" required>
+                                <option value="portuguese">Português (pt-br)</option>
+                                <option value="english">Inglês</option>
+                                <option value="spanish">Espanhol</option>
+                                <option value="french">Francês</option>
+                            </select>
+                        </div>
+
+                        <!-- Upload de Arquivo -->
+                        <div class="col-md-6">
+                            <label for="file" class="form-label">Upload de Protótipo</label>
+                            <input type="file" class="form-control" id="file" name="file" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png"
+                                required>
+                        </div>
+
+                        <!-- Linguagens Preferidas -->
+                        <div class="col-md-6">
+                            <label for="languages" class="form-label">Linguagens Preferidas</label>
+                            <select class="form-select" id="languages" name="languages[]" multiple required>
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="python">Python</option>
+                                <option value="java">Java</option>
+                            </select>
+                        </div>
+
+                        <!-- Banco de Dados -->
+                        <div class="col-md-6">
+                            <label for="database" class="form-label">Banco de Dados</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="database" id="mysql" value="mysql"
+                                    required>
+                                <label class="form-check-label" for="mysql">MySQL</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="database" id="postgresql"
+                                    value="postgresql" required>
+                                <label class="form-check-label" for="postgresql">PostgreSQL</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="database" id="mongodb" value="mongodb"
+                                    required>
+                                <label class="form-check-label" for="mongodb">MongoDB</label>
+                            </div>
+                        </div>
+
+                        <!-- Turno Preferido -->
+                        <div class="col-md-6">
+                            <label for="shift" class="form-label">Turno Preferido</label>
+                            <select class="form-select" id="shift" name="shift" required>
+                                <option value="morning">Manhã</option>
+                                <option value="afternoon">Tarde</option>
+                                <option value="evening">Noite</option>
+                            </select>
+                        </div>
+
+                        <!-- Melhor Hora para Reuniões -->
+                        <div class="col-md-6">
+                            <label for="meeting-time" class="form-label">Melhor Hora para Reuniões</label>
+                            <input type="time" class="form-control" id="meeting-time" name="meeting-time" required>
+                        </div>
+
+                        <!-- Previsão de Entrega -->
+                        <div class="col-md-6">
+                            <label for="delivery-date" class="form-label">Previsão de Entrega</label>
+                            <input type="date" class="form-control" id="delivery-date" name="delivery-date" required>
+                        </div>
+
+                        <!-- Botões -->
+                        <div class="col-md-12 d-flex justify-content-between">
+                            <button type="reset" class="btn btn-danger">Limpar</button>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/let%C3%ADcia-mendes-portela-9934ba2a9/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/49/49408.png" alt="LinkedIn">
+                </a>
+                <a href="mailto:leticiamendesportelateixeirami@gmail.com">
+                    <img src="https://www.whbrasil.org/wp-content/uploads/2019/09/Icone-email-1-preto.png" alt="Email">
+                </a>
+                <a href="http://github.com/leticiamendesz">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS (necessário para interatividade) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
